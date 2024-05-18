@@ -5,7 +5,7 @@
   >
     <!-- <PageBlocker content="Desktop view is temporarily unavailable. Please switch to mobile" /> -->
     <PageHeader title="Let's Connect" />
-    <p class="text-white">
+    <p class="text-white md:self-start">
       Interested in collaborating on a project or just want to say hello? Feel
       free to reach out below 👇
     </p>
