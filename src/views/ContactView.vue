@@ -90,7 +90,7 @@
           <span> Message </span>
         </div>
         <div class="form-control items-center">
-          <button class="btn w-1/3" type="submit">Send</button>
+          <button class="btn" type="submit">Send</button>
         </div>
       </form>
     </div>
@@ -133,12 +133,15 @@
   }
 
   .contact-form {
+    align-self: flex-start;
     width: 100%;
+    max-width: 1000px;
     margin-bottom: 80px !important;
   }
 
   .contact-form button {
     margin: 0;
+    width: 200px;
   }
 
   .form-control {
