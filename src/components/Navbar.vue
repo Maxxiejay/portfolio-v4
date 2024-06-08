@@ -1,6 +1,6 @@
 <template>
   <div id="navbar-desktop" class="hidden md:flex justify-between w-3/4 text-white">
-    <div class="glow-panel absolute top-0 left-0 w-full h-full"></div>
+    <!-- <div class="glow-panel absolute top-0 left-0 w-full h-full"></div> -->
     <div class="name">Max<span class="text-primary">well</span></div>
     <div class="nav-items flex gap-6 items-center">
       <RouterLink :to="{ name: 'home' }">Home</RouterLink>
@@ -89,13 +89,12 @@ const handleMenuToggle = () => {
 
 #navbar-desktop {
   position: fixed;
-  top: 1rem;
+  top: 0;
+  width: 100%;
   padding: 1rem;
   background: var(--dark);
-  border-radius: 10px;
   overflow: hidden;
   z-index: 9999;
-  border: 1px solid rgba(131, 85, 231, 0.3);
 }
 
 #navbar-desktop .name {

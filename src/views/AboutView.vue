@@ -62,12 +62,8 @@
 
     <section id="certificates">
       <PageHeader subHeading="Certificates" />
-      <div class="cert-slider-cont w-full overflow-scroll">
-        <div class="cert-slider flex gap-2 w-fit">
-          <div class="certificate">
+          <div class="certificate marker">
             <img src="../assets/images/Aptlearn_flutter_certificate.jpg" alt="apt learn flutter certificate">
-          </div>      
-        </div>
       </div>
     </section>
 
@@ -222,6 +218,6 @@
   } */
 
   #certificates .certificate img{
-    max-width: 500px;
+    width: 100%;
   }
 </style>
