@@ -35,6 +35,22 @@
             </div>
           </div> 
         </ProjectCard>
+        <ProjectCard github="https://github.com/AmazingJoMax" siteUrl="https://dwpcng.netlify.app" siteName="DWPCNG">
+          <div class="flex flex-col gap-4">
+            <div class="image">
+              <img src="../assets/images/laracast_mobile.png" alt="">
+            </div>
+            <span class="text-lg font-semibold">Laracast</span>
+            <p class="description text-gray-300">
+              Blog built on laravel
+            </p>
+            <div class="flex">
+              <Tag name="Vue.js" class="border-green-600 text-green-600" />
+              <Tag name="TailwindCSS" class="border-blue-400 text-blue-400" />
+              <Tag name="Laravel" class="border-red-600 text-red-600" />
+            </div>
+          </div> 
+        </ProjectCard>
         <ProjectCard github="https://github.com/AmazingJoMax" siteUrl="#" siteName="wypa">
           <div class="flex flex-col gap-4">
             <div class="image">
@@ -46,6 +62,7 @@
             </p>
             <div class="flex">
               <Tag name="Flutter" class="border-blue-600 text-blue-600" />
+              <Tag name="Laravel" class="border-red-600 text-red-600" />
             </div>
           </div> 
         </ProjectCard>
