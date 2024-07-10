@@ -169,8 +169,8 @@
   import PlainCard from "@/components/cards/PlainCard.vue";
 
   const download = (filename) => {
-  // Construct the path relative to the current file location
-  const filePath = new URL(`../assets/${filename}`, import.meta.url).href;
+  // Assuming your development server or production server serves files from the `public` directory at the root
+  const filePath = `${window.location.origin}/assets/${filename}`;
 
   // Create a temporary link element and trigger the download
   const link = document.createElement('a');
