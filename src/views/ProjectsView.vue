@@ -31,7 +31,7 @@
             <div class="flex">
               <Tag name="Vue.js" class="border-green-600 text-green-600" />
               <Tag name="TailwindCSS" class="border-blue-400 text-blue-400" />
-              <Tag name="Laravel" class="border-red-600 text-red-600" />
+              <Tag name="Firebase" class="border-yellow-600 text-yellow-600" />
             </div>
           </div> 
         </ProjectCard>
@@ -81,8 +81,7 @@
   import PageBlocker from "@/components/PageBlocker.vue"
   import PageHeader from "@/components/PageHeader.vue"
   import ProjectCard from "@/components/cards/ProjectCard.vue";
-  import Tag from "@/components/Tag.vue"
-
+  import Tag from "@/components/Tag.vue";
 </script>
 
 <style >

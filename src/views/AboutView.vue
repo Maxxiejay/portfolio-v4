@@ -16,7 +16,7 @@
         optimizing performance, I'm committed to delivering high-quality
         solutions that exceed expectations.
       </p>
-      <a href="../assets/Max_resume4.pdf" class="btn-alt w-fit" download="Maxwell-Oba-Joshua">Resume</a>
+      <button @click="download('Max_resume4.pdf')" class="btn-alt w-fit" >Resume</button>
     </section>
     <section id="services">
       <PageHeader subHeading="What I Do" />
@@ -167,6 +167,20 @@
   import ServicesCard from "@/components/cards/ServicesCard.vue";
   import ExpCard from "@/components/cards/ExpCard.vue";
   import PlainCard from "@/components/cards/PlainCard.vue";
+
+  const download = (filename) => {
+  // Construct the path relative to the current file location
+  const filePath = new URL(`../assets/${filename}`, import.meta.url).href;
+
+  // Create a temporary link element and trigger the download
+  const link = document.createElement('a');
+  link.href = filePath;
+  link.download = filename.split('/').pop(); // Ensure we get just the file name
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};
+
 </script>
 
 <style>
