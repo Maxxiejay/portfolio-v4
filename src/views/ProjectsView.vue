@@ -35,7 +35,7 @@
             </div>
           </div> 
         </ProjectCard>
-        <ProjectCard github="https://github.com/AmazingJoMax" siteUrl="https://dwpcng.netlify.app" siteName="DWPCNG">
+        <ProjectCard github="https://github.com/AmazingJoMax" siteUrl="#" siteName="Laracast">
           <div class="flex flex-col gap-4">
             <div class="image">
               <img src="../assets/images/laracast_mobile.png" alt="">
@@ -63,6 +63,21 @@
             <div class="flex">
               <Tag name="Flutter" class="border-blue-600 text-blue-600" />
               <Tag name="Laravel" class="border-red-600 text-red-600" />
+            </div>
+          </div> 
+        </ProjectCard>
+        <ProjectCard github="https://github.com/AmazingJoMax" siteUrl="#" siteName="Laracast">
+          <div class="flex flex-col gap-4">
+            <div class="image">
+              <img src="../assets/images/trapezium_mobile.png" alt="">
+            </div>
+            <span class="text-lg font-semibold">Trapezium</span>
+            <p class="description text-gray-300">
+              A full stack and fully functional job listing 
+            </p>
+            <div class="flex">
+              <Tag name="Laravel" class="border-red-600 text-red-600" />
+              <Tag name="TailwindCSS" class="border-blue-400 text-blue-400" />
             </div>
           </div> 
         </ProjectCard>
