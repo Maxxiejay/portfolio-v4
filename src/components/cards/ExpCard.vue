@@ -1,5 +1,5 @@
 <template>
-  <div id="exp-card">
+  <div id="exp-card" class="md:mx-auto">
     <div
       class="flex flex-col items-center absolute z-10 left-2 top-4 self-center h-full"
     >
@@ -35,7 +35,7 @@
 
 <style scoped>
   #exp-card {
-    height: fit-content;
+    height: 100% !important;
     width: 100%;
     padding: 10px;
     position: relative;

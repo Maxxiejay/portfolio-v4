@@ -1,6 +1,6 @@
 <template>
   <div
-    class="services_card p-4 pl-8 relative text-white max-w-xs mx-auto flex flex-col justify-center"
+    class="services_card p-4 pt-8 pl-8 relative text-white max-w-xs mx-auto flex flex-col justify-start"
     data-aos="fade-up"
   >
     <div
@@ -40,8 +40,11 @@
 <style scoped>
   .services_card {
     width: 320px;
+    height: 360px !important;
     height: fit-content;
     background: rgba(143, 92, 255, 0.1);
+    display: flex;
+    margin: 0 auto;
   }
 
   /* .test {

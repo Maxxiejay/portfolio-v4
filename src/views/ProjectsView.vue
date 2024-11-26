@@ -4,7 +4,23 @@
       <PageHeader title="My Projects" />
       <p class="my-10 text-xl text-center">Here are some of the works I've done so far</p>
       <div id="project-cards">
-        <ProjectCard github="https://github.com/AmazingJoMax" siteUrl="https://anythingfood.ng" siteName="Anythingfood">
+        <ProjectCard github="https://github.com/AmazingJoMax" siteUrl="https://ueye-download.netlify.app" siteName="UEye">
+          <div class="flex flex-col gap-4">
+            <div class="image">
+              <img src="../assets/images/ueye.png" alt="">
+            </div>
+            <span class="text-lg font-semibold">UEye</span>
+            <p class="description text-gray-300">
+              A browser extension that analyses UIs and gives suggestions for improvement.
+              It also conducts SEO audits on pages and can double for taking screenshots
+            </p>
+            <div class="flex">
+              <Tag name="Vue.js" class="border-green-600 text-green-600" />
+              <Tag name="Gemini Ai" class="border-purple-600 text-purple-600" />
+            </div>
+          </div> 
+        </ProjectCard>
+        <ProjectCard github="https://github.com/AmazingJoMax" siteUrl="https://anythingfood.netlify.app" siteName="Anythingfood">
           <div class="flex flex-col gap-4">
             <div class="image">
               <img src="../assets/images/anythingfood.png" alt="">
@@ -16,6 +32,21 @@
             <div class="flex">
               <Tag name="Vue.js" class="border-green-600 text-green-600" />
               <Tag name="TailwindCSS" class="border-blue-400 text-blue-400" />
+            </div>
+          </div> 
+        </ProjectCard>
+        <ProjectCard github="https://github.com/AmazingJoMax" siteUrl="#" siteName="">
+          <div class="flex flex-col gap-4">
+            <div class="image">
+              <img src="../assets/images/studycraft.png" alt="">
+            </div>
+            <span class="text-lg font-semibold">StudyCraft Ai</span>
+            <p class="description text-gray-300">
+              A mobile application built with flutter and gemini ai that generates study materials from given topics
+            </p>
+            <div class="flex">
+              <Tag name="Flutter" class="border-blue-600 text-blue-600" />
+              <Tag name="Gemini Ai" class="border-purple-600 text-purple-600" />
             </div>
           </div> 
         </ProjectCard>
@@ -40,9 +71,9 @@
             <div class="image">
               <img src="../assets/images/laracast_mobile.png" alt="">
             </div>
-            <span class="text-lg font-semibold">Laracast</span>
+            <span class="text-lg font-semibold">Laracast Blog</span>
             <p class="description text-gray-300">
-              Blog built on laravel
+              Fullstack blog built on laravel and TailwindCSS
             </p>
             <div class="flex">
               <Tag name="Vue.js" class="border-green-600 text-green-600" />

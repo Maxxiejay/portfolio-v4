@@ -20,7 +20,7 @@
     </section>
     <section id="services">
       <PageHeader subHeading="What I Do" />
-      <div class="services_cards grid gap-4">
+      <div class="services_cards mx-auto">
         <ServicesCard
           title="Front-end development"
           description=" I specialize in crafting engaging and intuitive user interfaces and creating seamless experiences for users by implementing responsive design principles and leveraging modern frameworks of Vue.js."
@@ -62,7 +62,7 @@
 
     <section id="certificates">
       <PageHeader subHeading="Certificates" />
-          <div class="certificate marker">
+          <div class="certificates-display">
             <img src="../assets/images/Aptlearn_flutter_certificate.jpg" alt="apt learn flutter certificate">
       </div>
     </section>
@@ -83,73 +83,110 @@
 
     <section id="experience">
       <PageHeader subHeading="Work Experience" />
-      <ExpCard
-        title="community volunteer"
-        org="Google Developer Group Akure"
-        date="August 2023 - present"
-      >
-      </ExpCard>
-      <ExpCard
-        title="frontend developer"
-        org="DWPCNG"
-        date="Sept 2023 - present"
-      >
-        <ul class="flex flex-col space-y-4 mt-4">
-          <li>
-            Designed a clean and intuitive user interface that reflects the
-            values and identity of the church.
-          </li>
-          <li>
-            Integrated live streaming functionality directly into the website to
-            broadcast church services, events, and special programs in
-            real-time.
-          </li>
-          <li>
-            Regularly updated website content, including announcements, upcoming
-            events, sermon and recordings to keep the site fresh and engaging.
-          </li>
-        </ul>
-      </ExpCard>
-      <ExpCard
-        title="lead developer"
-        org="Anythingfood.ng"
-        date="Jan 2024 - present"
-      >
-        <ul class="flex flex-col space-y-4 mt-4">
-          <li>
-            Designed a visually appealing and intuitive user interface using
-            Vue.js.
-          </li>
-          <li>
-            Implemented responsive design techniques to ensure optimal viewing
-            experience across desktops, tablets, and mobile devices.
-          </li>
-          <li>
-            Developed interactive features like search functionality, and
-            filtering options for easy navigation.
-          </li>
-          <li>
-            Integrated secure payment gateways to facilitate online transactions
-            and ensure user data privacy.
-          </li>
-        </ul>
-      </ExpCard>
-      <ExpCard title="flutter developer" org="Wypa" date="Feb 2024 - present">
-        <ul class="flex flex-col space-y-4 mt-4">
-          <li>
-            Successfully designed and developed a visually appealing Flutter app
-            with a seamless user experience.
-          </li>
-          <li>
-            Integrated external APIs to fetch and display dynamic content such
-            as user profiles, product listings, or real-time updates.
-          </li>
-          <li>
-            Optimized app performance and responsiveness through efficient UI
-            rendering and data fetching strategies
-          </li>
-        </ul>
-      </ExpCard>
+      <div class="exp-cards">
+
+        <ExpCard
+          title="community volunteer"
+          org="Google Developers Group Akure"
+          date="August 2023 - present"
+        >
+        </ExpCard>
+        <ExpCard
+          title="backend developer"
+          org="HealthTok"
+          date="Sept 2024 - present"
+        >
+          <ul class="flex flex-col space-y-4 mt-4">
+            <li>
+              Developed a clean backend using Laravel.
+            </li>
+            <li>
+              Integrated features like user authentication, user roles payment and wallet system and chat system.
+            </li>
+            <li>
+              Deployed and managed the backend on hosting provider and also conducted maintenance regularly.
+            </li>
+          </ul>
+        </ExpCard>
+        <ExpCard
+          title="backend developer"
+          org="Fuxup Marketplace"
+          date="July 2024 - present"
+        >
+          <ul class="flex flex-col space-y-4 mt-4">
+            <li>
+              Continued development of the backend using PHP.
+            </li>
+            <li>
+              Designed and developed dashboard for client and freelancers
+            </li>
+            <li>
+              Managed backend deployment on hosting provider and also conducted maintenance regularly.
+            </li>
+          </ul>
+        </ExpCard>
+        <ExpCard
+          title="frontend developer"
+          org="DWPCNG"
+          date="Sept 2023 - present"
+        >
+          <ul class="flex flex-col space-y-4 mt-4">
+            <li>
+              Designed a clean and intuitive user interface that reflects the
+              values and identity of the church.
+            </li>
+            <li>
+              Integrated live streaming functionality directly into the website to
+              broadcast church services, events, and special programs in
+              real-time.
+            </li>
+            <li>
+              Regularly updated website content, including announcements, upcoming
+              events, sermon and recordings to keep the site fresh and engaging.
+            </li>
+          </ul>
+        </ExpCard>
+        <ExpCard
+          title="lead developer"
+          org="Anythingfood.ng"
+          date="Jan 2024 - July 2024"
+        >
+          <ul class="flex flex-col space-y-4 mt-4">
+            <li>
+              Designed a visually appealing and intuitive user interface using
+              Vue.js.
+            </li>
+            <li>
+              Implemented responsive design techniques to ensure optimal viewing
+              experience across desktops, tablets, and mobile devices.
+            </li>
+            <li>
+              Developed interactive features like search functionality, and
+              filtering options for easy navigation.
+            </li>
+            <li>
+              Integrated secure payment gateways to facilitate online transactions
+              and ensure user data privacy.
+            </li>
+          </ul>
+        </ExpCard>
+        <ExpCard title="flutter developer" org="Wypa" date="Feb 2024 - May 2024">
+          <ul class="flex flex-col space-y-4 mt-4">
+            <li>
+              Successfully designed and developed a visually appealing Flutter app
+              with a seamless user experience.
+            </li>
+            <li>
+              Integrated external APIs to fetch and display dynamic content such
+              as user profiles, product listings, or real-time updates.
+            </li>
+            <li>
+              Optimized app performance and responsiveness through efficient UI
+              rendering and data fetching strategies
+            </li>
+          </ul>
+        </ExpCard>
+      </div>
     </section>
     <RouterLink
       :to="{ name: 'projects' }"
@@ -191,10 +228,19 @@
     padding-left: 4px; 
   }
 
+  .exp-cards{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .exp-cards #exp-card{
+    max-width: 350px;
+  }
+
   .cards{
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
   }
 
@@ -224,14 +270,18 @@
     border-radius: 10px;
     overflow: hidden;
   }
+*/
 
-  .certificate img{
+.certificates-display{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+  .certificates-display img{
     width: 100%;
     height: 100%;
+    max-width: 400px;
     object-fit: cover;
-  } */
-
-  #certificates .certificate img{
-    width: 100%;
   }
 </style>
