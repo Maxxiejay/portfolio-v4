@@ -4,6 +4,22 @@
       <PageHeader title="My Projects" />
       <p class="my-10 text-xl text-center">Here are some of the works I've done so far</p>
       <div id="project-cards">
+        <ProjectCard github="https://github.com/AmazingJoMax" siteUrl="https://cowrite-demo.netlify.app" siteName="Cowrite">
+          <div class="flex flex-col gap-4">
+            <div class="image">
+              <img src="../assets/images/cowrite-demo.png" alt="">
+            </div>
+            <span class="text-lg font-semibold">Cowrite</span>
+            <p class="description text-gray-300">
+              A blog fullstack blog website like medium that lets users not only create posts and make comments on posts, but also lets users make contributions to posts
+            </p>
+            <div class="flex">
+              <Tag name="Vue.js" class="border-green-600 text-green-600" />
+              <Tag name="Laravel" class="border-red-600 text-red-600" />
+              <Tag name="TailwindCSS" class="border-blue-400 text-blue-400" />
+            </div>
+          </div> 
+        </ProjectCard>
         <ProjectCard github="https://github.com/AmazingJoMax" siteUrl="https://ueye-download.netlify.app" siteName="UEye">
           <div class="flex flex-col gap-4">
             <div class="image">
@@ -76,7 +92,6 @@
               Fullstack blog built on laravel and TailwindCSS
             </p>
             <div class="flex">
-              <Tag name="Vue.js" class="border-green-600 text-green-600" />
               <Tag name="TailwindCSS" class="border-blue-400 text-blue-400" />
               <Tag name="Laravel" class="border-red-600 text-red-600" />
             </div>

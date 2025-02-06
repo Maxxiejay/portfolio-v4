@@ -92,6 +92,29 @@
         >
         </ExpCard>
         <ExpCard
+          title="php tutor"
+          org="Litecode hub"
+          date="Jan 2025 - present"
+        >
+        </ExpCard>
+        <ExpCard
+          title="lead developer"
+          org="Cowrite"
+          date="Dec 2024 - present"
+        >
+          <ul class="flex flex-col space-y-4 mt-4">
+            <li>
+              Developed a clean and minimal frontend using Vue.js and TailwindCSS
+            </li>
+            <li>
+              Built a robust backend service with features like user authentication and authorization post CRUD functionalities
+            </li>
+            <li>
+              Deployed and managed the application on hosting providers and also conducted maintenance regularly.
+            </li>
+          </ul>
+        </ExpCard>
+        <ExpCard
           title="backend developer"
           org="HealthTok"
           date="Sept 2024 - present"
@@ -105,6 +128,20 @@
             </li>
             <li>
               Deployed and managed the backend on hosting provider and also conducted maintenance regularly.
+            </li>
+          </ul>
+        </ExpCard>
+        <ExpCard
+          title="flutter developer"
+          org="HealthTok"
+          date="Nov 2024 - present"
+        >
+          <ul class="flex flex-col space-y-4 mt-4">
+            <li>
+              Built the video conferencing screens.
+            </li>
+            <li>
+              Integrated the vidoe conferencing feature into the app with audio call functionality.
             </li>
           </ul>
         </ExpCard>
@@ -228,11 +265,12 @@
     padding-left: 4px; 
   }
 
+  /*
   .exp-cards{
     display: flex;
     flex-wrap: wrap;
   }
-
+*/
   .exp-cards #exp-card{
     max-width: 350px;
   }

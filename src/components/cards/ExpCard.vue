@@ -1,5 +1,5 @@
 <template>
-  <div id="exp-card" class="md:mx-auto">
+  <div id="exp-card" class="">
     <div
       class="flex flex-col items-center absolute z-10 left-2 top-4 self-center h-full"
     >
