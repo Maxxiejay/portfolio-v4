@@ -102,7 +102,7 @@
           org="Cowrite"
           date="Dec 2024 - present"
         >
-          <ul class="flex flex-col space-y-4 mt-4">
+          <ul class="flex flex-col space-y-4 mt-4"> 
             <li>
               Developed a clean and minimal frontend using Vue.js and TailwindCSS
             </li>
