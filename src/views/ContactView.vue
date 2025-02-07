@@ -70,15 +70,15 @@
       <span class="line"></span>
     </div> -->
     <div class="contact-form">
-      <form action="POST" class="space-y-4">
+      <form class="space-y-4" name="contact" method="POST" data-netlify="true">
         <div class="w-full flex flex-col justify-between space-y-4 md:space-y-0 md:flex-row md:gap-4">
           <div class="form-control flex-1">
             <input type="text" name="name" required />
             <span> Name </span>
           </div>
           <div class="form-control flex-1">
-            <input type="text" name="phone" required />
-            <span> Phone </span>
+            <input type="email" name="email" required />
+            <span> Email </span>
           </div>
         </div>
         <div class="form-control">
