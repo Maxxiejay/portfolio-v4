@@ -4,7 +4,7 @@
       <PageHeader title="My Projects" />
       <p class="my-10 text-xl text-center">Here are some of the works I've done so far</p>
       <div id="project-cards">
-        <ProjectCard github="https://github.com/AmazingJoMax" siteUrl="https://cowrite-demo.netlify.app" siteName="Cowrite">
+        <ProjectCard github="https://github.com/AmazingJoMax" siteUrl="https://cowrite.africa" siteName="Cowrite">
           <div class="flex flex-col gap-4">
             <div class="image">
               <img src="../assets/images/cowrite-demo.png" alt="">
