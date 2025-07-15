@@ -16,7 +16,7 @@
         optimizing performance, I'm committed to delivering high-quality
         solutions that exceed expectations.
       </p>
-      <button @click="download('Max_resume4.pdf')" class="btn-alt w-fit" >Resume</button>
+      <button @click="download('max_resume5.pdf')" class="btn-alt w-fit" >Resume</button>
     </section>
     <section id="services">
       <PageHeader subHeading="What I Do" />
@@ -108,6 +108,23 @@
             </li>
             <li>
               Built a robust backend service with features like user authentication and authorization post CRUD functionalities
+            </li>
+            <li>
+              Deployed and managed the application on hosting providers and also conducted maintenance regularly.
+            </li>
+          </ul>
+        </ExpCard>
+        <ExpCard
+          title="lead backend dev & CTO"
+          org="Realestway"
+          date="Dec 2024 - present"
+        >
+          <ul class="flex flex-col space-y-4 mt-4"> 
+            <li>
+              Developed a clean, robust and scalable backend using Laravel.
+            </li>
+            <li>
+              I contributed to the early-stage development and later oversaw the development and running of the app
             </li>
             <li>
               Deployed and managed the application on hosting providers and also conducted maintenance regularly.
