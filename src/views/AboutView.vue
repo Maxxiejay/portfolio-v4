@@ -117,7 +117,7 @@
         <ExpCard
           title="lead backend dev & CTO"
           org="Realestway"
-          date="Dec 2024 - present"
+          date="Feb 2025 - present"
         >
           <ul class="flex flex-col space-y-4 mt-4"> 
             <li>
